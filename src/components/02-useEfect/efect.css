@@ -1,0 +1,15 @@
+.titleForm{
+    @apply text-xl font-bold
+}
+
+hr {
+    @apply w-full mt-4 h-1
+}
+
+.input-name, .input-email, .input-password {
+    @apply w-[70%] h-8 mt-8 bg-slate-100 shadow-md rounded-md p-1 text-black focus:outline-blue-500 focus:transition-transform ease-out
+}
+
+.btn-submit {
+    @apply w-[40%] h-8 mt-8 !bg-blue-700 text-white font-semibold rounded-md hover:scale-125 transition-transform ease-out duration-700
+}

@@ -1,0 +1,16 @@
+
+.wrapper h1 {
+    @apply text-xl font-bold 
+}
+
+.addButton, .substractButton{
+    @apply w-28 bg-blue-700 text-white rounded-md mt-8 mx-4 shadow-md
+}
+
+.wrapper{
+    @apply flex flex-col h-screen w-screen place-content-center place-items-center
+}
+
+.resetState{
+   @apply w-28 bg-red-600 text-white rounded-md mt-8 mx-4 shadow-md
+}
