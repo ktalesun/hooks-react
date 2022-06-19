@@ -6,7 +6,7 @@ export const TodoListItem = ({todo, index, handleToggle, handleDelete}) => {
   
     return (
         
-        <li className='flex gap-6 items-center justify-between mb-4'
+        <li className='flex gap-6 items-center justify-between mb-4 border-[1px] p-4'
             key={todo.id}>
             
             <p  className = {`text-[25px] cursor-pointer ${todo.done && 'complete'}`} 

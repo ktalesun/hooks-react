@@ -15,8 +15,8 @@ export const Message = () => {
       const coords = { x: e.x, y:e.y}
       setCoords(coords)
     }
-
     window.addEventListener('mousemove', mouseMove)
+    
     return () => {
       console.log('Componente desmontado');
       window.removeEventListener('mousemove', mouseMove)

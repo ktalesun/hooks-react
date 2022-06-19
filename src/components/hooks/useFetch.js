@@ -11,11 +11,7 @@ export const useFetch = (url) => {
       }
     }, [])
     
-
-    useEffect(() => {
-
-        setState({data: null, loading: true, error: null})
-
+    const getFetch = () => {
         fetch(url)
         .then(resp => resp.json())
         .then( data => {
@@ -32,9 +28,17 @@ export const useFetch = (url) => {
                     console.log('setState no se llamó')
                 }
                 
-            }, 4000);
+            }, 3000);
            
         })
+    } 
+
+
+    useEffect(() => {
+
+        setState({data: null, loading: true, error: null})
+        getFetch();
+        
     }, [url])
     
     return state;

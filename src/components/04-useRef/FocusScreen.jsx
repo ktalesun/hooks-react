@@ -12,7 +12,7 @@ export const FocusScreen = () => {
   
   return (
     <div className='container mx-auto flex flex-col place-content-center place-items-center mt-8'>
-        <h1 className='titleForm'>Simple form with useEfect</h1>
+        <h1 className='titleForm'>Simple form with useRef</h1>
         <hr />
         <input  type='text'
                 name='name'

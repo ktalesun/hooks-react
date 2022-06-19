@@ -3,7 +3,7 @@ import { useForm } from '../hooks/useForm';
 import './efect.css'
 export const SimpleFormWithCustomHook = () => {
 
-    const [formValues, handleInputChange] = useForm({
+    const [formValues, handleInputChange, reset] = useForm({
         name: '',
         email: '',
         password: ''
@@ -54,6 +54,9 @@ export const SimpleFormWithCustomHook = () => {
 
         <button className='btn-submit'
                 type="submit">Guardar</button>
+        
+        <button className='btn-submit'
+                onClick={reset}>Reset</button>
 
     </form>
   )
