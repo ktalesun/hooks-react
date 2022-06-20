@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { StyledTitle } from '../StyledComponents/StyledTitle'
-import { UserContext } from './userContext'
+import { UserContext } from './context/UserContext'
 
 export const HomeScreen = () => {
 
@@ -16,7 +16,6 @@ export const HomeScreen = () => {
           {JSON.stringify(user, null, 3)}
         </pre>
 
-        <StyledTitle />
     
     </div>
   )

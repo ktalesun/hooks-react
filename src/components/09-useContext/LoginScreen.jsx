@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { UserContext } from './userContext'
+import { UserContext } from './context/UserContext'
 
 import '../03-examples/styles.css';
 
